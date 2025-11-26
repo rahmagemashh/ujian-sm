@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <style>
+        body {
+            background: #b3b2b2;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 120px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgb(79, 79, 79);
+        }
+
+        h2 {
+            text-align: center;
+            color: #262626;
+        }
+
+        label {
+            font-weight: 600;
+            display: block;
+            margin-top: 15px;
+        }
+
+        select,
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border-radius: 10px;
+            border: 1px solid #7f7d7e;
+            background: #e1e1e1;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            margin-top: 30px;
+            background: linear-gradient(135deg, #6b6b6b, #a0a0a0);
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(146, 145, 145, 0.3);
+        }
+
+        button:hover {
+            transform: scale(1.03);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Checkout Pemesanan</h2>
+
+        <label>Pilih Ukuran</label>
+        <select>
+            <option value="">-- Pilih Ukuran --</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+        </select>
+
+        <label>Pilih Warna</label>
+        <select>
+            <option value="">-- Pilih Warna --</option>
+            <option>Putih</option>
+            <option>Pink</option>
+            <option>Merah</option>
+            <option>Hitam</option>
+        </select>
+
+        <label>Metode Pembayaran</label>
+        <select>
+            <option value="">-- Pilih Pembayaran --</option>
+            <option>Transfer Bank</option>
+            <option>QRIS</option>
+            <option>COD</option>
+            <option>e-Wallet (Dana, OVO, Gopay)</option>
+        </select>
+
+        <button onclick="window.location.href='successorder.html'">
+            Konfirmasi & Lanjutkan Pembayaran
+        </button>
+    </div>
+
+</body>
+
+</html>

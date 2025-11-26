@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesanan Berhasil</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #d1d1d1, #6b6b6b);
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            background: white;
+            padding: 40px 30px;
+            text-align: center;
+            width: 420px;
+            border-radius: 25px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 0.7s ease;
+        }
+
+        .box h1 {
+            color: #585858;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .box p {
+            font-size: 17px;
+            color: #3c3c3c;
+            margin-top: 5px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 20px;
+            background: linear-gradient(135deg, #767575, #b5b4b4);
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgb(87, 87, 87);
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h1>🎉 Pesanan Berhasil!</h1>
+        <p>Pesanan Anda telah berhasil diproses.</p>
+        <p>Semoga Anda suka dengan barang yang telah kami kirimkan 💖</p>
+
+        <a href="img.html" class="btn">Kembali Belanja</a>
+    </div>
+
+</body>
+
+</html>

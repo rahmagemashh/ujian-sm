@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boutique Queen Lieyy - Help</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --brand-1: #ff2e93;
+            --brand-2: #f875c8;
+            --accent: #f752ba;
+            --muted-bg: #fff5fa;
+            --glass-bg: rgba(255, 255, 255, 0.6);
+            --text-dark: #222;
+            --nav-height: 72px;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            color: var(--text-dark);
+            background: linear-gradient(135deg, #ffd6ea 0%, #ff8ac0 100%);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* NAVBAR */
+        header {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 20px;
+            display: flex;
+            justify-content: center;
+            pointer-events: none;
+            z-index: 999;
+        }
+
+        nav.navbar {
+            pointer-events: auto;
+            width: min(1100px, 92%);
+            background: var(--brand-2);
+            padding: 12px 20px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .logo h2 {
+            margin: 0;
+            color: #fff;
+            font-size: 18px;
+            letter-spacing: 0.2px;
+        }
+
+        .logo p {
+            margin: 0;
+            color: #fff;
+            font-size: 12px;
+            opacity: 0.95;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            display: inline-block;
+            padding: 10px 14px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 15px;
+            transition: all .18s ease;
+        }
+
+        .nav-links a:hover {
+            background: rgba(255, 255, 255, 0.12);
+            color: #fff;
+            transform: translateY(-2px)
+        }
+
+        .nav-links a.split {
+            background: var(--accent);
+            padding: 9px 16px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        /* SECTION / CARD */
+        main {
+            padding-top: calc(var(--nav-height) + 10px);
+        }
+
+        .help-section {
+            max-width: 900px;
+            margin: 0 auto 80px;
+            padding: 40px;
+        }
+
+        .card {
+            background: var(--glass-bg);
+            border-radius: 18px;
+            padding: 32px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+            backdrop-filter: blur(8px);
+        }
+
+        .card h1 {
+            margin: 0 0 8px;
+            color: var(--brand-1);
+            font-size: 32px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .card p.lead {
+            text-align: center;
+            margin: 0 0 22px;
+            color: #333;
+        }
+
+        form {
+            display: grid;
+            gap: 12px;
+        }
+
+        label {
+            font-weight: 600;
+            font-size: 14px;
+            display: block;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 12px 14px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            background: var(--muted-bg);
+            font-size: 14px;
+            resize: vertical;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: 2px solid rgba(255, 46, 147, 0.14);
+            box-shadow: 0 2px 8px rgba(255, 46, 147, 0.08);
+        }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 6px;
+        }
+
+        button.btn {
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: transform .14s ease, box-shadow .14s ease;
+        }
+
+        button.btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12)
+        }
+
+        button.btn.secondary {
+            background: transparent;
+            color: var(--text-dark);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        /* Responsive */
+        @media (max-width:700px) {
+            nav.navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+                padding: 14px;
+            }
+
+            .nav-links {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .card {
+                padding: 22px;
+            }
+
+            .logo h2 {
+                font-size: 16px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="logo" aria-hidden="false">
+                <h2>Dior Queen Lieyy</h2>
+                <p>better than the best</p>
+            </div>
+
+            <div class="nav-links" role="menubar" aria-label="Top links">
+                <a href="profil.html" role="menuitem">Home</a>
+                <a href="img.html" role="menuitem">Clothes</a>
+                <a href="footer.html" role="menuitem">Contact</a>
+                <a href="help.html" class="split" role="menuitem">Help</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="help" class="help-section">
+            <div class="card" role="region" aria-labelledby="help-title">
+                <h1 id="help-title">Need Help?</h1>
+                <p class="lead">Kami siap membantu Anda kapan saja. Silakan isi form di bawah ini ✨</p>
+
+                <form action="masukan.html" method="get" novalidate>
+                    <div>
+                        <label for="name">Nama Lengkap</label>
+                        <input id="name" name="name" type="text" placeholder="Masukkan nama Anda" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="Masukkan email aktif" required>
+                    </div>
+
+                    <div>
+                        <label for="question">Pertanyaan Anda</label>
+                        <textarea id="question" name="question" rows="6" placeholder="Tuliskan pertanyaan Anda..."
+                            required></textarea>
+                    </div>
+
+                    <div class="actions">
+                        <button type="submit" class="btn">Kirim pertanyaan</button>
+                        <a href="profil.html" class="btn secondary" role="button">Kembali</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
